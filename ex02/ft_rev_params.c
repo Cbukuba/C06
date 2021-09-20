@@ -10,29 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_rev_int_tab(char *tab, int size)
-{
-	int	i;
-	int	y;
-	int	c;
-
-	c = 0;
-	while (c++ < size / 2)
-	{
-		i = 0;
-		while (i < size / 2)
-		{
-			y = tab[i];
-			tab[i] = tab[size - 1];
-			tab [size - 1] = y;
-			i ++;
-			size --;
-		}
-	}
-}
-
 void	ft_putstr(char *str)
 {
 	int	c;
