@@ -28,5 +28,6 @@ int	main(int argc, char **argv)
 {
 	argc = 1;
 	ft_putstr(argv[0]);
+	write(1, "\n", 1);
 	return (0);
 }
